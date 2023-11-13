@@ -8,6 +8,8 @@ import { VehiclesModule } from './vehicles/vehicles.module';
 import { BrandsModule } from './brands/brands.module';
 import { ModelsModule } from './models/models.module';
 import { RentalsModule } from './rentals/rentals.module';
+import { PaymentsModule } from './payments/payments.module';
+import { CustomersModule } from './customers/customers.module';
 
 @Module({
   imports: [
@@ -24,9 +26,11 @@ import { RentalsModule } from './rentals/rentals.module';
     FilesModule,
     UsersModule,
     VehiclesModule,
+    CustomersModule,
     RentalsModule,
     BrandsModule,
     ModelsModule,
+    PaymentsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

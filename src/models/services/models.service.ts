@@ -28,12 +28,15 @@ export class ModelsService{
          });
     }
     
-    //mostrar todas los modelos
     findAll(){
         return   this.modelRepo.find({
             order: {id: 'ASC'},
+            relations: {
+                brand: true,
+            },
         });
     }
+    
 
     //eliminar un modelo
     async remove(id:number){

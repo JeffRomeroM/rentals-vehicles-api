@@ -28,7 +28,10 @@ export class RentalsService{
             relations: {
                 user: true,
                 vehicle: true,
-                customer: true
+                customer: true,
+                payment_type: true,
+                
+
             }
         });
         
@@ -42,6 +45,7 @@ export class RentalsService{
                 user: true,
                 vehicle: true,
                 customer: true,
+                payment_type: true
             },
         });
     }
